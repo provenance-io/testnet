@@ -19,8 +19,8 @@ The first public testnet using the 0.40 SDK base Provenance Blockchain will be f
 
 - **Explorer** - [explorer.test.provenance.io](https://explorer.test.provenance.io)
 - **Faucet** - [faucet.test.provenance.io](https://faucet.test.provenance.io)
-- **Persistant Peer** - node-id@35.243.142.236:26656
-- **Seed Node** - node-id@pio-testnet-1.seed-0.test.provenance.io:26656
+- **Persistant Peer** - 93b5812b4059295c02e545fb769e74d950512b3c@35.243.142.236:26656
+- **Seed Node** - b8f84a4d5b35bc2f82317da784076ab0f23725ce@pio-testnet-1.seed-0.test.provenance.io:26656
 
 ### pio-testnet-2
 
