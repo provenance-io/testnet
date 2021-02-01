@@ -178,13 +178,13 @@ laddr = "tcp://0.0.0.0:26656"
 # If empty, will use the same port as the laddr,
 # and will introspect on the listener or use UPnP
 # to figure out the address.
-external_address = "tcp://35.243.142.236:26657"
+external_address = ""
 
 # Comma separated list of seed nodes to connect to
-seeds = ""
+seeds = "b8f84a4d5b35bc2f82317da784076ab0f23725ce@pio-testnet-1.seed-0.test.provenance.io:26656"
 
 # Comma separated list of nodes to keep persistent connections to
-persistent_peers = ""
+persistent_peers = "93b5812b4059295c02e545fb769e74d950512b3c@35.243.142.236:26656"
 
 # UPNP port forwarding
 upnp = false
