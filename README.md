@@ -13,7 +13,7 @@ _none_
 | pio-testnet-2 | tbd              | tbd.         | 10-02-2021 17:00:00Z | 11-02-2021 17:00:00Z |
 
 
-### pio-testnet-1
+### testnet-alpha
 
 The first public testnet using the 0.40 SDK base Provenance Blockchain will be focused on streamlining the process for building the public test network configuraiotn and early beta testing of three of the 4 main Provenance modules (name, attribute, and marker).
 
