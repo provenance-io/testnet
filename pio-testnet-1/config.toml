@@ -178,7 +178,7 @@ laddr = "tcp://0.0.0.0:26656"
 # If empty, will use the same port as the laddr,
 # and will introspect on the listener or use UPnP
 # to figure out the address.
-external_address = "tcp://10.10.20.10:26657"
+external_address = ""
 
 # Comma separated list of seed nodes to connect to
 seeds = ""
