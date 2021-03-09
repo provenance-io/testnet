@@ -65,7 +65,7 @@ priv_validator_state_file = "data/priv_validator_state.json"
 
 # TCP or UNIX socket address for Tendermint to listen on for
 # connections from an external PrivValidator process
-priv_validator_laddr = "0.0.0.0:26658"
+priv_validator_laddr = ""
 
 # Path to the JSON file containing the private key to use for node authentication in the p2p protocol
 node_key_file = "config/node_key.json"
@@ -184,7 +184,7 @@ external_address = ""
 seeds = ""
 
 # Comma separated list of nodes to keep persistent connections to
-persistent_peers = "2edb19711d0037e3a597ec624539d12f8f7e8f23@35.232.121.26:26656,e53d5bb10c6aee3ae3b2a42f6bf413854d215e0b@34.75.172.89:26656,5c5ee6df5679b0ac8ac41e92a4feab7886a7a27c@35.194.76.143:26656,8c725d416300dfd71ed7c08a8a34f1446e6d14c4@8c725d416300dfd71ed7c08a8a34f1446e6d14c4:26656"
+persistent_peers = "26240dd8c5f78c3c54196613b9c04d2d750a534e@35.232.121.26:26656,8fcbbdba4088a604d6c083dd6be19e070adc1d93@35.194.76.143:26656,1f159852f00292803d8c937d953cb3da68a25624@34.75.172.89:26656,7970256f3f8879e0152bb26e977d2139890cb59d@34.82.40.187:26656"
 
 # UPNP port forwarding
 upnp = false
