@@ -1,9 +1,9 @@
 #!/bin/bash
 
-CHAIN_ID=''
-MONIKER=''
-PROVENANCED_VERSION=''
-GITHUB_TOKEN=''
+CHAIN_ID='pio-testnet-1'
+MONIKER='eric-node'
+PROVENANCED_VERSION='v0.2.0'
+GITHUB_TOKEN='cb648497561d43cf7770ceb8f5ad368dcb5e0b69'
 
 SYSTEMD_FILE='[Unit]
 Description=provenanced
@@ -53,7 +53,7 @@ err=$(sudo ls 2>&1 > /dev/null)
 check_err $? "${err}"
 
 printf "Installing pre-requisite libraries... "
-err=$(sudo apt-get update && sudo apt-get install -y jq unzip libuser libleveldb-dev git)
+err=$(sudo apt-get update && sudo apt-get install -y jq unzip libuser libleveldb-dev git apt-utils systemctl curl)
 check_err $? "${err}"
 
 printf "Deleting existing go install... "
