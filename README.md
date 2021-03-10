@@ -9,7 +9,7 @@ Testnet configurations for public [Provenance.io](https://provenance.io) network
 
 | Name          | Software Version | Wasm Verison | Genesis Finalized    | Network Start        |
 |---------------|------------------|--------------|----------------------|----------------------|
-| pio-testnet-1 | 0.2.0            | 0.12.2       | 09-03-2021 18:45:00Z | 09-03-2021 19:00:00Z |
+| pio-testnet-1 | 0.2.0            | 0.15.1       | 09-03-2021 18:45:00Z | 09-03-2021 19:00:00Z |
 
 ## Upcoming Public Test Networks
 
