@@ -23,7 +23,7 @@ RUN GENESIS_VERSION="$(cat /$CHAIN_ID/genesis-version.txt)" && \
     mv ./bin/libwasmvm.so /usr/lib
 
 ADD $CHAIN_ID /$CHAIN_ID/
-ADD docker/archive/docker-entrypoint.sh /docker-entrypoint.sh
+ADD docker/node/archive/docker-entrypoint.sh /docker-entrypoint.sh
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
 CMD ["sh", "-c", "/usr/bin/provenanced start $(cat /$CHAIN_ID/extra-args.txt)"]

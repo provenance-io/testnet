@@ -3,7 +3,7 @@
 if [ ! -f "${PIO_HOME}/config/genesis.json" ]; then
     mkdir -p "${PIO_HOME}/config"
     cp "/${CHAIN_ID}/genesis.json" "${PIO_HOME}/config/genesis.json"
-    cp "/${CHAIN_ID}/config.toml" "${PIO_HOME}/config/config.toml"
+    cp "/${CHAIN_ID}/node-config.toml" "${PIO_HOME}/config/config.toml"
 fi
 
 if [ ! -d "${PIO_HOME}/data" ]; then
