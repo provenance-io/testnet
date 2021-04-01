@@ -5,10 +5,10 @@ on:
       - main
     paths:
       - "docker/README.md"
-jobs:
-  dockerHubDescription:
-    runs-on: ubuntu-latest
-  #   steps:
+# jobs:
+#   dockerHubDescription:
+#     runs-on: ubuntu-latest
+#     steps:
       # Disabled due to https://github.com/docker/hub-feedback/issues/1927
       # untill resolution to https://github.com/docker/roadmap/issues/115 implemented.
       # - name: Checkout
