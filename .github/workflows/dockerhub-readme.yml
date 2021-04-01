@@ -5,19 +5,22 @@ on:
       - main
     paths:
       - "docker/README.md"
-# jobs:
-#   dockerHubDescription:
-#     runs-on: ubuntu-latest
-#     steps:
+jobs:
+  dockerHubDescription:
+    # Skip job until hub issues are taken care of
+    if: "false"
+
+    runs-on: ubuntu-latest
+    steps:
       # Disabled due to https://github.com/docker/hub-feedback/issues/1927
       # untill resolution to https://github.com/docker/roadmap/issues/115 implemented.
-      # - name: Checkout
-      #   uses: actions/checkout@v2
-      # - name: Publish description
-      #   uses: peter-evans/dockerhub-description@v2
-      #   with:
-      #     username: ${{ secrets.DOCKERHUB_USERNAME }}
-      #     password: ${{ secrets.DOCKERHUB_TOKEN }}
-      #     repository: provenanceio/node
-      #     readme-filepath: docker/README.md
-      #     short-description: ${{ github.event.repository.description }}
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Publish description
+        uses: peter-evans/dockerhub-description@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          repository: provenanceio/node
+          readme-filepath: docker/README.md
+          short-description: ${{ github.event.repository.description }}
