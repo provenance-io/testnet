@@ -42,11 +42,12 @@ $ docker run -it --rm --name my-node -v $(pwd)/testnet:/home/provenance provenan
 
 ## Custom configuration files
 
-If you choose to use a custom configuration file, you can pre-create it. The image will not overwrite a custom config or genesis file.
+If you choose to use a custom config.toml or app.toml configuration file, you can pre-create them. The bootstrap process will not overwrite these existing files.
 
 ```console
 $ mkdir -p ./testnet/config
 $ cp my-custom-config.toml testnet/config/config.toml
+$ cp my-custom-app.toml testnet/config/app.toml
 ```
 
 If you choose to use the default, and tweak that, spin up the docker image with a no-op, and edit the created file.
@@ -54,5 +55,17 @@ If you choose to use the default, and tweak that, spin up the docker image with 
 ```console
 $ docker run --rm --name my-node -v $(pwd)/testnet:/home/provenance provenanceio/node:${chain-id} true
 $ vi testnet/config/config.toml
+$ vi testnet/config/app.toml
 <edit>
+```
+
+## Exposing external ports
+
+- **Common ports**
+  - api: `1317`
+  - rpc: `26657`
+  - grpc: `9090`
+
+```console
+$ docker run --name my-node -p 1317:1317 -p 26657:26657 -p 9090:9090 -v $(pwd)/testnet:/home/provenance provenanceio/node:${chain-id}
 ```
