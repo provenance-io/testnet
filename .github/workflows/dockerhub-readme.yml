@@ -1,0 +1,21 @@
+name: Update dockerhub readme
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "docker/README.md"
+jobs:
+  dockerHubDescription:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Publish description
+        uses: peter-evans/dockerhub-description@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          repository: provenanceio/node
+          readme-filepath: docker/README.md
+          short-description: ${{ github.event.repository.description }}
