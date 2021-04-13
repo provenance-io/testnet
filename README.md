@@ -3,13 +3,13 @@ Testnet configurations for public [Provenance.io](https://provenance.io) network
 
 ## Active Test Networks
 
-| Name          | Software Version | Wasm Verison | Genesis Finalized    | Network Start        |
-|---------------|------------------|--------------|----------------------|----------------------|
-| testnet-alpha | 0.1.2            | 0.12.2       | 27-01-2021 17:00:00Z | 29-01-2021 18:40:00Z |
+| Name          | Genesis Version | Current Version | Wasm Verison   | Genesis Finalized    | Network Start        |
+|---------------|-----------------|-----------------|----------------|----------------------|----------------------|
+| testnet-alpha | 0.1.2           | 1.0.0           | v0.16.0-alpha1 | 27-01-2021 17:00:00Z | 29-01-2021 18:40:00Z |
 
-| Name          | Software Version | Wasm Verison | Genesis Finalized    | Network Start        |
-|---------------|------------------|--------------|----------------------|----------------------|
-| pio-testnet-1 | 0.2.0            | 0.15.1       | 09-03-2021 18:45:00Z | 09-03-2021 19:00:00Z |
+| Name          | Genesis Version | Software Version | Wasm Verison   | Genesis Finalized    | Network Start        |
+|---------------|-----------------|------------------|----------------|----------------------|----------------------|
+| pio-testnet-1 | 0.2.0           | 1.0.0            | v0.16.0-alpha1 | 09-03-2021 18:45:00Z | 09-03-2021 19:00:00Z |
 
 ## Upcoming Public Test Networks
 
@@ -20,7 +20,7 @@ Testnet configurations for public [Provenance.io](https://provenance.io) network
 
 ### testnet-alpha
 
-The first public testnet using the 0.40 SDK base Provenance Blockchain is focused on streamlining the process for building the public test network configuraiotn and early beta testing of three of the 4 main Provenance modules (name, attribute, and marker).
+The first public testnet using the 0.40 SDK base Provenance Blockchain is focused on streamlining the process for building the public test network configuration and early beta testing of three of the 4 main Provenance modules (name, attribute, and marker).
 
 - **Explorer** - [explorer.test.provenance.io](https://explorer.test.provenance.io)
 - **Faucet** - [faucet.test.provenance.io](https://faucet.test.provenance.io)
@@ -29,7 +29,7 @@ The first public testnet using the 0.40 SDK base Provenance Blockchain is focuse
 
 ### pio-testnet-1
 
-The first public testnet using the 0.40 SDK base Provenance Blockchain is focused on streamlining the process for building the public test network configuraiotn and early beta testing of three of the 4 main Provenance modules (name, attribute, and marker).
+The first public testnet using the 0.40 SDK base Provenance Blockchain is focused on streamlining the process for building the public test network configuration and early beta testing of three of the 4 main Provenance modules (name, attribute, and marker).
 
 - **Explorer** - [explorer.test.provenance.io](https://explorer.test.provenance.io)
 - **Faucet** - [faucet.test.provenance.io](https://faucet.test.provenance.io)
