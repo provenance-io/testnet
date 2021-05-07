@@ -1,1 +1,1 @@
--t --pruning=nothing --unsafe-skip-upgrades=569400 --log_level=info --log_format=plain
+-t --pruning=nothing --unsafe-skip-upgrades=569400,1395200 --log_level=info --log_format=plain
