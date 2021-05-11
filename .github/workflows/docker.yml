@@ -46,6 +46,6 @@ jobs:
           build-args: |
             CHAIN_ID=${{ matrix.net }}
           platforms: linux/amd64
-          file: docker/node/archive/Dockerfile
+          file: docker/node/visor/Dockerfile
           push: ${{ github.event_name != 'pull_request' }}
           tags: provenanceio/node:${{ matrix.net }}
