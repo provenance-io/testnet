@@ -3,13 +3,13 @@ Testnet configurations for public [Provenance.io](https://provenance.io) network
 
 ## Active Test Networks
 
-| Name          | Genesis Version | Current Version | Wasm Verison   | Genesis Finalized    | Network Start        |
+| Name          | Genesis Version | Current Version | wasmd Verison  | Genesis Finalized    | Network Start        |
 |---------------|-----------------|-----------------|----------------|----------------------|----------------------|
-| testnet-alpha | 0.1.2           | 1.0.0           | v0.16.0-alpha1 | 27-01-2021 17:00:00Z | 29-01-2021 18:40:00Z |
+| testnet-alpha | 0.1.2           | 1.0.0           | v0.16.0        | 27-01-2021 17:00:00Z | 29-01-2021 18:40:00Z |
 
-| Name          | Genesis Version | Software Version | Wasm Verison   | Genesis Finalized    | Network Start        |
+| Name          | Genesis Version | Software Version | wasmd Verison  | Genesis Finalized    | Network Start        |
 |---------------|-----------------|------------------|----------------|----------------------|----------------------|
-| pio-testnet-1 | 0.2.0           | 1.0.0            | v0.16.0-alpha1 | 09-03-2021 18:45:00Z | 09-03-2021 19:00:00Z |
+| pio-testnet-1 | 0.2.0           | 1.0.0            | v0.16.0        | 09-03-2021 18:45:00Z | 09-03-2021 19:00:00Z |
 
 ## Upcoming Public Test Networks
 
