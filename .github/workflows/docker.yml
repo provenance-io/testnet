@@ -9,6 +9,11 @@ on:
       - "docker/node/**"
       - "pio-testnet-1/**"
       - "testnet-beta/**"
+
+  # Also run every Wednesday at 12:00am.
+  schedule:
+    - cron: '0 0 * * 3'
+
 jobs:
   docker:
     runs-on: ubuntu-latest
