@@ -3,7 +3,6 @@
 CHAIN_ID=''
 MONIKER=''
 PROVENANCED_VERSION=''
-GITHUB_TOKEN=''
 
 SYSTEMD_FILE='[Unit]
 Description=provenanced
@@ -156,13 +155,11 @@ err=$(su provenanced -c "/usr/local/bin/provenanced -t init --chain-id=${CHAIN_I
 check_err $? "${err}"
 
 printf "Pulling genesis file from ${CHAIN_ID}... "
-err=$(curl -L -s -H "Authorization: Bearer ${GITHUB_TOKEN}" -H 'Accept: application/vnd.github.v3.raw' https://api.github.com/repos/provenance-io/testnet/contents/${CHAIN_ID}/genesis.json | su provenanced -c "tee /provenanced/config/genesis.json")
-# err=$(curl -L -s -H 'Accept: application/vnd.github.v3.raw' https://api.github.com/repos/provenance-io/testnet/contents/${CHAIN_ID}/genesis.json | su provenanced -c "tee /provenanced/config/genesis.json")
+err=$(curl -L -s -H 'Accept: application/vnd.github.v3.raw' https://api.github.com/repos/provenance-io/testnet/contents/${CHAIN_ID}/genesis.json | su provenanced -c "tee /provenanced/config/genesis.json")
 check_err $? "${err}"
 
 printf "Pulling config.toml file from ${CHAIN_ID}... "
-err=$(curl -L -s -H "Authorization: Bearer ${GITHUB_TOKEN}" -H 'Accept: application/vnd.github.v3.raw' https://api.github.com/repos/provenance-io/testnet/contents/${CHAIN_ID}/config.toml | su provenanced -c "tee /provenanced/config/config.toml")
-# err=$(curl -L -s -H 'Accept: application/vnd.github.v3.raw' https://api.github.com/repos/provenance-io/testnet/contents/${CHAIN_ID}/config.toml | su provenanced -c "tee /provenanced/config/config.toml")
+err=$(curl -L -s -H 'Accept: application/vnd.github.v3.raw' https://api.github.com/repos/provenance-io/testnet/contents/${CHAIN_ID}/config.toml | su provenanced -c "tee /provenanced/config/config.toml")
 check_err $? "${err}"
 
 printf "Creating provenanced systemd service... "
