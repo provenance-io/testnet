@@ -86,12 +86,11 @@ check_err $? "${err}"
 
 printf "Fetching provenance release url... "
 binary_url=$(curl -L -s -H "Authorization: Bearer ${GITHUB_TOKEN}" https://api.github.com/repos/provenance-io/provenance/releases/tags/${PROVENANCED_VERSION}  | jq -r ".assets[]|select(.name==\"provenance-linux-amd64-${PROVENANCED_VERSION}.zip\")|.browser_download_url")
-# binary_url=$(curl -L -s https://api.github.com/repos/provenance-io/provenance/releases/tags/${PROVENANCED_VERSION}  | jq -r ".assets[]|select(.name==\"provenance-linux-amd64-${PROVENANCED_VERSION}.zip\")|.browser_download_url")
+binary_url=$(curl -L -s https://api.github.com/repos/provenance-io/provenance/releases/tags/${PROVENANCED_VERSION}  | jq -r ".assets[]|select(.name==\"provenance-linux-amd64-${PROVENANCED_VERSION}.zip\")|.browser_download_url")
 check_err $?
 
 printf "Downloading provenance release... "
-err=$(curl -L -s -H "Authorization: Bearer ${GITHUB_TOKEN}" ${binary_url} -o /tmp/provenance.zip 2>&1 > /dev/null)
-# err=$(curl -L -s ${binary_url} -o /tmp/provenance.zip 2>&1 > /dev/null)
+err=$(curl -L -s ${binary_url} -o /tmp/provenance.zip 2>&1 > /dev/null)
 check_err $? "${err}"
 
 printf "Creating provenanced directory... "
