@@ -81,11 +81,10 @@ done
 check_err 0 ""
 
 printf "Downloading cosmovisor... "
-err=$(su provenanced -c "/usr/local/go/bin/go get github.com/cosmos/cosmos-sdk/cosmovisor/cmd/cosmovisor 2>&1 > /dev/null")
+err=$(su provenanced -c "/usr/local/go/bin/go get github.com/provenance-io/cosmovisor/cmd/cosmovisor 2>&1 > /dev/null")
 check_err $? "${err}"
 
 printf "Fetching provenance release url... "
-binary_url=$(curl -L -s -H "Authorization: Bearer ${GITHUB_TOKEN}" https://api.github.com/repos/provenance-io/provenance/releases/tags/${PROVENANCED_VERSION}  | jq -r ".assets[]|select(.name==\"provenance-linux-amd64-${PROVENANCED_VERSION}.zip\")|.browser_download_url")
 binary_url=$(curl -L -s https://api.github.com/repos/provenance-io/provenance/releases/tags/${PROVENANCED_VERSION}  | jq -r ".assets[]|select(.name==\"provenance-linux-amd64-${PROVENANCED_VERSION}.zip\")|.browser_download_url")
 check_err $?
 
