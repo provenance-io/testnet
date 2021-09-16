@@ -1,1 +1,1 @@
--t --log_level=info --log_format=plain
+-t --log_level=info --log_format=plain --unsafe-skip-upgrades 3417970
