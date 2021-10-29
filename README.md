@@ -43,7 +43,7 @@ The following list provides the software versions in use and the blockheight whe
 | desert        | v1.5.0           | v0.16.0        | 2050181              |
 | usdf.c-hotfix | v1.6.0           | v0.17.0        | 3072485              |
 | eigengrau     | v1.6.0           | v0.17.0        | 3417970*             |
-| feldgrau      | v1.7.3           | v0.19.0 (pio)  | 3547261              |
+| feldgrau      | v1.7.5           | v0.19.0 (pio)  | 3547261              |
 
 _*NOTE:* `eigengrau` software upgrade was skipped due to a migration error.  Start `provenanced` with the `--unsafe-skip-upgrades=3417970` to bypass this upgrade._
 
