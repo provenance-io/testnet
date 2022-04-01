@@ -181,7 +181,7 @@ laddr = "tcp://0.0.0.0:26656"
 external_address = ""
 
 # Comma separated list of seed nodes to connect to
-seeds = ""
+seeds = "2de841ce706e9b8cdff9af4f137e52a4de0a85b2@seed-0.test.provenance.io:26656,add1d50d00c8ff79a6f7b9873cc0d9d20622614e@seed-1.test.provenance.io:26656"
 
 # Comma separated list of nodes to keep persistent connections to
 persistent_peers = ""
