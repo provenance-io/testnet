@@ -31,7 +31,7 @@ The first public testnet using the 0.40 SDK base Provenance Blockchain is focuse
 
 #### `pio-testnet-1` Software Upgrades
 
-The following list provides the software versions in use and the blockheight when they were migrated to.
+The full upgrades list can be found at https://explorer.test.provenance.io/network/upgrades
 
 | Upgrage Name  | Software Version | Wasm Version.  | Block Height         |
 |---------------|------------------|----------------|----------------------|
